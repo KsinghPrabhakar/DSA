@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Insert_array</title>
+</head>
+<script>
+   
+
+    // ======code======
+    // easy way is splice() method
+    // data.splice(3,0,1000) => display
+    // array.splice(position, space, value)
+
+
+    //code in file.js
+    let data = [12,33,34,21,54,12];
+    let newEl = 500;
+    let position = 3;
+    // console.warn(data);
+    for(let i=data.length-1; i>=0; i--)
+    {
+        // console.warn(data[i]) //reveres array
+        if(i>=position)
+        {
+            data[i+1]=data[i] //space after index 3 with same value
+            if(i==position)
+            {
+                data[i]=newEl //inserted new element
+            }
+        }
+    }
+        console.warn(data);
+    function insertValue() {
+        let data = [12, 33, 34, 21, 54, 12];
+        const newValue = document.querySelector('#newEl').value
+        const indexPosition = document.querySelector('#position').value
+        // console.warn(data);
+        for (let i = data.length - 1; i >= 0; i--) {
+            // console.warn(data[i]) //reveres array
+            if (i >= indexPosition) {
+                data[i + 1] = data[i] //space after index 3 with same value
+                if (i == indexPosition) {
+                    data[i] = newValue //inserted new element
+                }
+            }
+        }
+        console.warn(data)
+    }
+
+
+</script>
+
+<body>
+    <input type="text" id="position" placeholder="Enter Position" />
+    <input type="text" id="newEl" placeholder="Enter New Element" />
+    <button onclick="insertValue()" id="btn">Insert</button>
+</body>
+
+</html>

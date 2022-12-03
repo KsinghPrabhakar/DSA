@@ -1,0 +1,14 @@
+    ************Search Array element*************
+    * use loop to Search element
+    * Search element with text input
+       * sortcut for Search element(default function)  
+       * sortcut for Delete element(default function)
+
+    =============Algorithim=============
+    1. start with array list
+    2. declare a  two variables for item(element) index=null|undifiend
+    3. start loop for eterating all element
+    4. condition to compare array(element) equal equal items
+    5. swap => index=i 
+    6. print the output
+     

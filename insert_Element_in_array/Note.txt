@@ -1,0 +1,14 @@
+==========Insert Element in Array================
+    * Understand issue and solution with whitebord
+    * Make Array, define the posion.
+    * Insert Element with text input and button.
+    * Insert Element with by default function.
+
+    ========Algorithim=========
+     start- with array list(data = [23,343,21,32,12,])
+     1. declare two variables 1st for replace value 2nd for position.
+     2. creat reverse  loop 
+     3. condition if loop value(i) greater than eqal position (where loop end) 
+     4. than creat a space between element where insert  new value (arr[i+1]=data[i])
+     5. after creat space than condition (i==position) => insert the newElement in array of index i.
+     6. print the array 

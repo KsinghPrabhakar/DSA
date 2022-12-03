@@ -1,0 +1,39 @@
+============Merge two array===============
+    * understand case and solution with whiteboard
+    * Make three arrays
+    * use 2 different loop to Merge element    
+            * shortcut for reverse array element(default function)
+            * shortcut for Merge array element(default function)
+    
+************Algorithims**************
+    1. start with three  array one array should be empty
+    2. loop for 1st array zero to length
+    3. then send data1 to  empty data (data3[i]=data1[i])
+    4. loop for 2nd array zero to length
+    5. then again swap the data2 in empty array (data3[data1.length+i]=data2[i])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let data1 =[1,2,3,4,5];
+let data2 =[6,7,8,9];
+let data3 =[];
+for(let i=0; i<data1.length; i++){
+data3[i]=data1[i]
+}
+for(let i=0; i<data2.length; i++){
+data3[data1.length+1] = data2[i]
+}
+console.log(data3)
+

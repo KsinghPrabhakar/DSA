@@ -1,0 +1,12 @@
+//=============Delete Element in Array==================
+        * Understand issue and solution with whitebord.
+        * Make Array define the posion
+        * use loop to Delete Element
+        * Delete Element with text input and button
+
+        =========Algorithim==========
+        1. declare a variables for possion 
+        2. loop for iterate the arrays increment loop starting with posion
+        3. creat one space between array
+        4. then array length should be length-1
+        5. print o/p

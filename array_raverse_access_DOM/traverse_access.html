@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>array_traversing</title>
+</head>
+<script>
+    let data = [1, 23, 45, 2, 12, 43, 211, 54, 32, 12]
+    // trevers data
+    // for(let i=0; i<data.length; i++)
+    // {
+    //     document.write(`Array ${i} is ${data[i]} <br>` )
+    // }
+
+    // accesing data
+    //   let x = 3; ===>find 3rd index value
+    //   document.write(data[3])
+
+    //   let x = 5; //===> find any index value by given index 
+    //   document.write(data[x]) 
+
+    function getElement() {
+        let el = document.getElementById('element').value
+        if (el < data.length && typeof parseInt(el)) {
+            alert(data[el])
+        }
+        else {
+            alert('Not valid index')
+        }
+    }
+
+</script>
+
+<body>
+    <input type="text" placeholder="Enter Your Index No." id="element" />
+    <button onclick="getElement()"> Get Element</button>
+</body>
+
+</html>

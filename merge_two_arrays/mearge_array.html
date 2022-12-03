@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>merge_array_element</title>
+</head>
+<script>
+    let list1 = [1, 2, 3, 4, 5];
+    let list2 = [6, 7, 8, 9, 10];
+    let final = [];
+    for (let i = 0; i < list1.length; i++) {
+        final[i] = list1[i];
+    }
+    for (let i = 0; i < list2.length; i++) {
+        final[list1.length + i] = list2[i];
+    }
+    console.log(final);
+</script>
+
+<body>
+
+</body>
+
+</html>

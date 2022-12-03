@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search_Element_of_Array</title>
+</head>
+<script>
+
+    function searchElement() {
+        let data = [1, 2, 3, 4, 5, 6, 8, 7, 9]
+        let index; 
+        let position = document.getElementById('input').value;
+        position=parseInt(position)
+        for(let i=0; i<=data.length-1; i++){
+            if(data[i]===position){
+                index = i
+                break
+            }          
+        } 
+        document.write(index);
+    }
+    // console.warn(indexOf(9))  // methode
+</script>
+
+<body>
+    <input type="text" placeholder="Enter Element of array" id="input" />
+    <button id="search" onclick="searchElement()">search</button>
+</body>
+
+</html>
